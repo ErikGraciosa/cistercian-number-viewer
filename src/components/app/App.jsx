@@ -1,5 +1,12 @@
 import React from 'react';
+import InputForm from '../inputForm/InputForm';
+import One from '../../../images/one.svg';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <InputForm/>
+      <img src={One}/>
+    </>
+  );
 }
