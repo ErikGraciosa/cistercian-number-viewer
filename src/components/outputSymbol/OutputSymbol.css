@@ -1,0 +1,24 @@
+.OutputSymbol {
+  .ones{
+    z-index: 0;
+    position: absolute;
+  }
+
+  .tens{
+    transform: rotateY(180deg);
+    z-index: 1;
+    position: absolute;
+  }
+
+  .hundreds{
+    transform: rotateX(180deg);
+    z-index: 2;
+    position: absolute;
+  }
+
+  .thousands{
+    transform: rotateY(180deg) rotateX(180deg);
+    z-index: 3;
+    position: absolute;
+  }
+}
