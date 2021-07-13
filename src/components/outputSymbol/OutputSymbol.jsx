@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Zero from '../../../images/zero.svg';
 import One from '../../../images/one.svg';
 import Two from '../../../images/two.svg';
@@ -15,13 +16,8 @@ function OutputSymbol({
   digitOne,
   digitTwo,
   digitThree,
-  digitFour,
-  inputNumber
+  digitFour
 }) {
-  console.log(inputNumber, digitOne,
-    digitTwo,
-    digitThree,
-    digitFour,);
 
   const convertToImageName = {
     0: Zero,
@@ -45,5 +41,12 @@ function OutputSymbol({
     </div>
   );
 }
+
+OutputSymbol.propTypes = {
+  digitOne: PropTypes.string.isRequired,
+  digitTwo: PropTypes.string.isRequired,
+  digitThree: PropTypes.string.isRequired,
+  digitFour: PropTypes.string.isRequired,
+};
 
 export default OutputSymbol;

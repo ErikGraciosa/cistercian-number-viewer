@@ -18,7 +18,7 @@ export default function App() {
     event.preventDefault();
 
     let number = inputNumber;
-    while(inputNumber.length != 4){
+    while(number.length != 4){
       number = '0' + number;
     }
 
@@ -40,7 +40,6 @@ export default function App() {
         digitTwo={digitTwo}
         digitThree={digitThree}
         digitFour={digitFour}
-        inputNumber={inputNumber}
       />
     </>
   );
